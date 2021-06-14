@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    /* I used the default font family from Bootstrap */
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #C61236;
+}
+
+.row {
+    width: 100%;
+}
+
+section {
+    border: 1px solid black;
+    margin: 10px;
+    background-color: #C2C5CC;
+}
+
+section > h2 {
+    float: right;
+    margin: 0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    height: 45px;
+    width: 230px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+section.chicken > h2 {
+    background-color: #FF1694;
+}
+
+section.beef > h2 {
+    color: white;
+    background-color: #DE1738;
+}
+
+section.sushi > h2 {
+    background-color: #F9D71C;
+}
+
+section > p {
+    padding: 65px 15px 15px 15px;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,.col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+    }
+}
+
+/* Mobile view */
+@media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
